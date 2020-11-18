@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+#logo {
+    padding-left: 10px;
+    height: 50px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    border-bottom: solid 1px seashell;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+a, a:visited {
+    color: seashell;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+#mission {
+    height: 700px;
+    background-image: url("images/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 70px;
+}
+
+#mission .content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+#featured-tea {
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+#tea-text {
+    width: 100%
+}
+
+figure {
+    padding: 10px 10px;
+}
+
+figure img {
+    height: 200px;
+    width: 300px;
+}
+
+#locations {
+    background-image: url("images/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    margin-top: 70px;
+    display: flex;
+    align-content: center;
+}
+
+#locations-title {
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+}
+
+.locations {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact {
+    margin-top: 20px;
+    height: 200px;
+}
+
+#go-left {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
