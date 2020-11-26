@@ -32,7 +32,8 @@ const pAequorFactory = (specimenNum, dna) => {
 				if (this.dna[i] == pAequor.dna[i]) sameBases += 1;
 			}
 			percentDiff = sameBases/15 * 100;
-			return `Specimen ${this.specimenNum} and specimen ${pAequor.specimenNum} have ${percentDiff.toFixed()}% DNA in common.`;
+			//return `Specimen ${this.specimenNum} and specimen ${pAequor.specimenNum} have ${percentDiff.toFixed()}% DNA in common.`;
+			return percentDiff.toFixed(2);
 		},
 		willLikelySurvive() {
 			let numCorG = 0;
@@ -42,16 +43,47 @@ const pAequorFactory = (specimenNum, dna) => {
 			const percentCorG = numCorG/15 * 100;
 			if (percentCorG >= 60) return true;
 			return false;
+		},
+		complementStrand() {
+			complementDNA = [];
+			for (i of this.dna) {
+				switch (i) {
+					case 'A':
+					  complementDNA.push('T');
+					  break;
+					case 'T':
+					  complementDNA.push('A');
+					  break;
+					case 'C':
+					  complementDNA.push('G');
+					  break;
+					case 'G':
+					  complementDNA.push('C');
+				}
+			}
+			return complementDNA;
 		}
 	};
 }
 
 const specimens = [];
+
 for (let i = 0; i < 30; i++) {
 	do specimens[i] = pAequorFactory(i, mockUpStrand())
 	while (specimens[i].willLikelySurvive() == false);
 }
 
+let mostRelated = [];
+
+for (i of specimens) {
+	for (j of specimens) {
+	  if (i.specimenNum == j.specimenNum) continue;
+	  if (mostRelated.length == 0 || i.compareDNA(j) > mostRelated[0].compareDNA(mostRelated[1])) {
+	  	mostRelated[0] = i;
+	  	mostRelated[1] = j;
+	  }
+	}
+}
 
 
 
