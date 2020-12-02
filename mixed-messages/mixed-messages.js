@@ -37,11 +37,10 @@ const endStatement =[
   'You\'re my best friend now.'
 ]
 
-const randGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-const randMiddle = middleQuestion[Math.floor(Math.random() * middleQuestion.length)];
-const randEnd = endStatement[Math.floor(Math.random() * endStatement.length)];
-
 function printMessage() {
+  const randGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const randMiddle = middleQuestion[Math.floor(Math.random() * middleQuestion.length)];
+  const randEnd = endStatement[Math.floor(Math.random() * endStatement.length)];
   console.log(randGreeting, randMiddle, randEnd);
 };
 
