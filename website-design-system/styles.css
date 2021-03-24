@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Syne+Mono&family=Train+One&display=swap');
+
+body {
+    background-color: #fdefef;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    color: red;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.section {
+    margin-top: 15px;
+    padding-bottom: 3.16em;
+}
+
+#colors {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.color-box {
+    display: inline-block;
+    width: 33%;
+}
+
+.color-box p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fdefef;
+}
+
+#nimbus-nana {
+    background-color: #4d7dd4
+}
+
+#wick-tickus {
+    background-color: #d66666
+}
+
+#hort {
+    background-color: #cc50ad
+}
+
+.font-box {
+    width: 80%;
+    margin: 3px auto;
+}
+
+#syne, #footer-element {
+    font-family: 'Syne Mono', monospace;
+}
+
+#oswald, #main-element {
+    font-family: 'Oswald', sans-serif;
+}
+
+#train, #nav-element {
+    font-family: 'Train One', cursive;
+}
+
+#elements {
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#flex-row, .element-box {
+    border: none;
+}
+
+ul {
+    text-align: left;
+}
