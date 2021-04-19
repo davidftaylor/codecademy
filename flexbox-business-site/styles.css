@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+.mission {
+    background-image: url('images/mission.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.mission div {
+    margin: auto;
+    padding: 0 10px;
+}
+
+.mission p {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 24px;
+}
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.juice {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.juice img {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+}
+
+.workforce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/field.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teammate img {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
